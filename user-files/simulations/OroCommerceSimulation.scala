@@ -129,6 +129,6 @@ class OroCommerceSimulation extends Simulation {
       .get(adminPrefix + "/user/logout")
       .headers(headersLogin))
 
-  setUp(scn.inject(atOnceUsers(5))).protocols(httpProtocol)
+  setUp(scn.inject(atOnceUsers(5)).protocols(httpProtocol)
 }
 
