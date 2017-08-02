@@ -39,8 +39,6 @@ class OroCrmSimulation extends Simulation {
     "X-CSRF-Header" -> "1",
     "X-Requested-With" -> "XMLHttpRequest")
 
-  val uri1 = "https://intra.cloud.orocrm.com:443"
-
   val scn = scenario("OroCrmSimulation")
     .exec(http("/user/login")
       .get("/user/login")
